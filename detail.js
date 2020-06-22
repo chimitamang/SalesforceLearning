@@ -3,13 +3,13 @@ import { bikes } from 'c/data';
 
 
 export default class Detail extends LightningElement {
-
+//just testing
     // Ensure changes are reactive when product is updated
     product;
 
     // Private var to track @api productId
     _productId = undefined;
-
+//testing this
     // Use set and get to process the value every time it's
     // requested while switching between products
     set productId(value) {
@@ -20,5 +20,6 @@ export default class Detail extends LightningElement {
     // getter for productId
     @api get productId(){
         return this._productId;
+        // testing this 
     }
 }
