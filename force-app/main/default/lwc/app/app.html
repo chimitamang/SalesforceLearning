@@ -1,0 +1,13 @@
+<template>
+    <div if:false={ready}> Loading...</div>
+    <div if:true ={ready}>
+        <lightning-card title="All About Bikes">
+            <div>Name: {name}</div>
+            <div>Description: {description}</div>
+            <div>Category: {category}</div>
+            <lightning-badge label={material}></lightning-badge>
+            <lightning-badge label={price}></lightning-badge>
+            <div><img src ={pictureUrl} width='50px' height='50px'/></div>
+        </lightning-card>
+    </div>
+</template>
